@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #FCF5E5;
+    font-family: monaco, monospace;
+}
+
+.background {
+    height: 600px;
+    background-image: url('beachimage.jpg');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.background2 {
+    height: 600px;
+    background-image: url('background2.jpg');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.form {
+    height: 100px;
+    border-radius: 10px;
+}
+
+.banner {
+    text-align: center;
+    font-size: 50px;
+}
+
+.p {
+    text-align: center;
+    font-size: 20px;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+#mainNav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 16px;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    background: #FCF5E5;
+    transition: background 0.3s;
+}
+
+#mainNav.is-sticky {
+    background: #333;
+}
+
+#mainNav.is-sticky a {
+    color: #eee
+}
+
+#mainNav.is-sticky .logo img {
+    height: 30px;
+}
+
+#mainNav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    width: 400px;
+    justify-content: space-around;
+}
+
+#mainNav ul li a{
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+#mainNav .logo img {
+    height: 50px;
+    transition: height 0.3s;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    background-color: #FCF5E5;
+}
